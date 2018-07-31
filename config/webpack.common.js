@@ -9,7 +9,7 @@ const commonPaths = require('./common-paths');
 const config = {
 	entry: {
 		// Split out the vendor module, as its a big boy
-		vendor: ['react', 'react-dom'],
+		vendor: ['react', 'react-dom', 'axios'],
 	},
 
 	output: {
