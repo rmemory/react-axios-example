@@ -1,8 +1,6 @@
 /* eslint-disable react/jsx-indent-props, react/jsx-one-expression-per-line */
 import React, { Component } from 'react';
 import axios from 'axios';
-// import PropTypes from 'prop-types';
-import './app.css';
 
 class App extends Component {
 	state = {
@@ -33,7 +31,7 @@ class App extends Component {
 					/r/react.js
 				</h1>
 				<ul>
-					{this.state.posts.map(post => (
+					{this.state.posts.map(post => ( // eslint-disable-line react/destructuring-assignment
 						<li key={post.id}>{post.title}</li>
 					))}
 				</ul>
@@ -41,11 +39,5 @@ class App extends Component {
 		);
 	}
 }
-
-// MediaCard.propTypes = {
-// 	title: PropTypes.string.isRequired,
-// 	body: PropTypes.string.isRequired,
-// 	imageUrl: PropTypes.string.isRequired,
-// };
 
 export default App;
