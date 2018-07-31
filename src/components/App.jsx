@@ -1,4 +1,5 @@
-/* eslint-disable react/jsx-indent-props, react/jsx-one-expression-per-line */
+/* eslint-disable react/jsx-indent-props, react/jsx-one-expression-per-line,
+   react/destructuring-assignment */
 import React, { Component } from 'react';
 import axios from 'axios';
 
@@ -70,7 +71,7 @@ class App extends Component {
 						if (posts.length > 0) {
 							return (
 								<ul>
-									{this.state.posts.map(post => ( // eslint-disable-line react/destructuring-assignment
+									{this.state.posts.map(post => (
 										<li key={post.id}>{post.title}</li>
 									))}
 								</ul>);
